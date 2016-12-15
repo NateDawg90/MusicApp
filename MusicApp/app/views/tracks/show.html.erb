@@ -1,0 +1,10 @@
+<h1><%= @track.name %></h1>
+<h4>Track</h4>
+
+
+<h5>Links</h5>
+<ul>
+  <li><%= link_to "Edit #{@track.name}", edit_track_url(@track) %></li>
+  <li><%= link_to "Delete #{@track.name}", track_url(@track), method: :delete %></li>
+  <li><%= link_to "All tracks", tracks_url(@track) %></li>
+</ul>

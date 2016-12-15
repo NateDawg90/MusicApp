@@ -1,0 +1,19 @@
+<h2>Log In</h2>
+
+<form action="<%= session_url %>" method="post">
+  <input type="hidden"
+         name="authenticity_token"
+         value="<%= form_authenticity_token %>">
+
+ <%= link_to "Sign Up", new_user_url, method: :get %>
+ <br>
+  <label for="email">Email</label>
+  <input type="text" id="email" name="user[email]" value="">
+
+  <br>
+
+  <label for="password">Password</label>
+  <input type="password" id="password" name="user[password]" value="">
+  <br><br>
+  <input type="submit">
+</form>
